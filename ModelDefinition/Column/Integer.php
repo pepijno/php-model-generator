@@ -2,19 +2,9 @@
 
 namespace ModelDefinition\Column;
 
+use ModelDefinition\Column\AbstractColumn;
 use ModelDefinition\Column\Interfaces\ColumnInterface;
 
-final class Integer implements ColumnInterface
+final class Integer extends AbstractColumn implements ColumnInterface
 {
-    private $_name;
-
-    public function __construct(string $name)
-    {
-        $this->_name = $name;
-    }
-
-    public function name() : string
-    {
-        return $this->_name;
-    }
 }
