@@ -3,9 +3,14 @@
 namespace ModelDefinition\Column\Decorators;
 
 use ModelDefinition\Column\Interfaces\ColumnInterface;
+use ModelDefinition\Column\Traits\NullableTrait;
+use ModelDefinition\Column\Traits\PrimaryTrait;
 
 final class DefaultValue implements ColumnInterface
 {
+    use NullableTrait;
+    use PrimaryTrait;
+
     private $_column;
     private $_defaultValue;
 
