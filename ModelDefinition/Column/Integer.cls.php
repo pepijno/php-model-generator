@@ -2,7 +2,7 @@
 
 namespace ModelDefinition\Column;
 
-use ModelDefinition\Column\ColumnInterface;
+use ModelDefinition\Column\Interfaces\ColumnInterface;
 
 final class Integer implements ColumnInterface
 {

@@ -2,7 +2,7 @@
 
 namespace ModelDefinition\Column\Decorators;
 
-use ModelDefinition\Column\ColumnInterface;
+use ModelDefinition\Column\Interfaces\ColumnInterface;
 
 final class Primary implements ColumnInterface
 {

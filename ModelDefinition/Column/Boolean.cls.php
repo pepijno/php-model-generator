@@ -2,7 +2,7 @@
 
 namespace ModelDefinition\Column;
 
-use ModelDefinition\Column\ColumnInterface;
+use ModelDefinition\Column\Interfaces\ColumnInterface;
 
 final class Boolean implements ColumnInterface
 {

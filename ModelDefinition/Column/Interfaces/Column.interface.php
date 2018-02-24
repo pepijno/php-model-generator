@@ -1,6 +1,6 @@
 <?php
 
-namespace ModelDefinition\Column;
+namespace ModelDefinition\Column\Interfaces;
 
 interface ColumnInterface
 {
