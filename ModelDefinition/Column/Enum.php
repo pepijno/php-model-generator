@@ -3,8 +3,9 @@
 namespace ModelDefinition\Column;
 
 use ModelDefinition\Column\AbstractColumn;
+use ModelDefinition\Column\Interfaces\ColumnInterface;
 
-final class Enum extends AbstractColumn
+final class Enum extends AbstractColumn implements ColumnInterface
 {
     private $_options;
 
