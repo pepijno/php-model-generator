@@ -15,6 +15,6 @@ final class Nullable implements ColumnInterface
 
     public function name() : string
     {
-        $this->_column->name();
+        return $this->_column->name();
     }
 }
