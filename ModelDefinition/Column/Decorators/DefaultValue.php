@@ -15,7 +15,7 @@ final class DefaultValue implements ColumnInterface
         $this->_defaultValue = $defaultValue;
     }
 
-    public function name()
+    public function name() : string
     {
         return $this->_column->name();
     }
