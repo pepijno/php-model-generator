@@ -2,22 +2,22 @@
 
 namespace ModelDefinition\Model;
 
-use ModelDefinition\Column\Interfaces\ColumnInterface;
-use ModelDefinition\Column\Integer;
+use ModelDefinition\Field\Interfaces\FieldInterface;
+use ModelDefinition\Field\Integer;
 
 final class Model
 {
     private $_name;
-    private $_columns = [];
+    private $_fields = [];
 
     public function __construct(string $name)
     {
         $this->_name = $name;
     }
 
-    public function addColumn(ColumnInterface $column)
+    public function addField(FieldInterface $field)
     {
-        $this->_columns[] = $column;
+        $this->_fields[] = $field;
         return $this;
     }
 
@@ -25,6 +25,6 @@ final class Model
     {
         $integer = new Integer($name);
         $integer = $q($integer);
-        return $this->addColumn($integer);
+        return $this->addField($integer);
     }
 }
